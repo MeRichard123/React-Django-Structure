@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "DjangoReactTemplate"
+version = "0.1.0"
+description = "Template Project Structure For React and DRF"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+djangorestframework = "^3.12.2"
+Django = "^3.1.5"
+django-cors-headers = "^3.6.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
