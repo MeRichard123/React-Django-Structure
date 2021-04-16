@@ -15,7 +15,6 @@ const runCommand = (command) => {
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/MeRichard123/React-Django-Structure ${repoName}`;
 const installDepsCommand = `cd ${repoName} && cd frontend && npm i`;
-const installBackend = `cd .. && cd backend && poetry install`;
 
 console.log(`Cloning repository into ${repoName}`);
 
@@ -24,9 +23,15 @@ if (!checkedOut) process.exit((code = -1));
 console.log("Installing Dependencies....");
 const installDeps = runCommand(installDepsCommand);
 if (!installDeps) process.exit((code = -1));
-const installBackendDeps = runCommand(installBackend);
-if (!installBackendDeps) process.exit((code = 1));
 
 console.log(
   "Congratulations! you are now up and running. Follow instructions below to start"
 );
+
+console.log("Start the Backend:");
+console.log("cd backend");
+console.log("virtualenv env");
+console.log("env\\Scripts\\activate");
+console.log("poetry install && python manage.py runserver");
+console.log("Start the Frontend:");
+console.log("cd frontend && npm start");

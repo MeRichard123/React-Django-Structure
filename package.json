@@ -1,6 +1,6 @@
 {
   "name": "@richardme123/create-react-django-app",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Starter for React Django Fullstack App",
   "bin": "./bin/cli.js",
   "scripts": {
